@@ -1,5 +1,6 @@
 import React from "react";
 
+import Stack from "@/components/layout/stack";
 import { ContentUnavailable } from "@/components/ui/content-unavailable";
 import * as Form from "@/components/ui/form";
 import { IconSymbol } from "@/components/ui/icon-symbol";
@@ -9,18 +10,18 @@ import {
   SegmentsList,
   SegmentsTrigger,
 } from "@/components/ui/segments";
-import Stack from "@/components/layout/stack";
 import * as AC from "@bacons/apple-colors";
 // import { Image } from "expo-image";
 import { Image } from "@/components/ui/img";
+import DateTimePicker from "@react-native-community/datetimepicker";
 import { Link } from "expo-router";
 import { ComponentProps } from "react";
 import {
+  Appearance,
   Button,
   OpaqueColorValue,
   Switch,
   Text,
-  Appearance,
   TextInput,
   View,
 } from "react-native";
@@ -30,13 +31,13 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
-import DateTimePicker from "@react-native-community/datetimepicker";
 
 import { GlurryList } from "@/components/example/glurry-modal";
 import ExpoSvg from "@/svg/expo.svg";
 import GithubSvg from "@/svg/github.svg";
 
-import * as Fonts from "@/constants/fonts";
+import { HTMLPictureExample } from "@/components/example/html-picture";
+import { Rounded } from "@/components/ui/rounded";
 import {
   Body,
   Callout,
@@ -50,8 +51,7 @@ import {
   Title2,
   Title3,
 } from "@/components/ui/title";
-import { Rounded } from "@/components/ui/rounded";
-import { HTMLPictureExample } from "@/components/example/html-picture";
+import * as Fonts from "@/constants/fonts";
 import { toast } from "@/utils/toast";
 
 function useOptimisticDarkMode() {
@@ -190,7 +190,7 @@ export default function Page() {
                       fontWeight: "bold",
                     }}
                   >
-                    Bacon Components
+                    MyCompanion
                   </Text>
                 </Animated.View>
               );
@@ -232,7 +232,7 @@ export default function Page() {
                 fontWeight: "600",
               }}
             >
-              Bacon Components
+              MyCompanion
             </Form.Text>
             <Form.Text style={{ textAlign: "center", fontSize: 14 }}>
               Copy/paste components for universal Expo Router apps.{" "}
