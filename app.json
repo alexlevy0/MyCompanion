@@ -9,7 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "bundleIdentifier": "com.bacon.crispy",
+      "bundleIdentifier": "com.getmycompanion.app",
       "supportsTablet": false,
       "infoPlist": {
         "UIViewControllerBasedStatusBarAppearance": true,
@@ -52,7 +52,8 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": true,
+      "baseUrl": "/MyCompanion"
     },
     "extra": {
       "router": {},

@@ -10,7 +10,9 @@
     "lint": "expo lint",
     "prepare": "npx patch-package",
     "deploy:ios": "npx testflight",
-    "deploy:web": "expo export -p web && npx eas-cli@latest deploy"
+    "deploy:web": "expo export -p web && npx eas-cli@latest deploy",
+    "deploy": "gh-pages --nojekyll -d dist",
+    "predeploy": "expo export -p web"
   },
   "dependencies": {
     "@bacons/apple-colors": "^0.0.8",
